@@ -1,5 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Input;
+using TestApp.Interfaces;
+using TestApp.Models;
 
 namespace TestApp
 {
@@ -8,6 +10,7 @@ namespace TestApp
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void FadeOutButton_MouseUp(object sender, MouseButtonEventArgs e)

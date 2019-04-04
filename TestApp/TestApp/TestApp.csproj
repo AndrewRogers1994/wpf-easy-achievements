@@ -70,12 +70,14 @@
     <Compile Include="Controls\BasicDialog.xaml.cs">
       <DependentUpon>BasicDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\IAcheivement.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\BaseAcheivement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
