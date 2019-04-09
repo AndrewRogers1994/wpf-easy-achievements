@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFEasyAchveiements", "WPFEasyAcheivementsDLL\WPFEasyAchveiements.csproj", "{97403A56-8BA5-4C4D-B451-60F8A8F314AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFEasyAchveiements", "WPFEasyAcheivements\WPFEasyAchveiements.csproj", "{97403A56-8BA5-4C4D-B451-60F8A8F314AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingIncludedDialog", "Examples\UsingIncludedDialog\UsingIncludedDialog.csproj", "{5B0378F7-1A99-43BF-8478-A041B3DD6B19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingACustomDialog", "Examples\CreatingACustomDialog\CreatingACustomDialog.csproj", "{78A59AFA-F8A4-4276-8C92-87757ED87F64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{97403A56-8BA5-4C4D-B451-60F8A8F314AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97403A56-8BA5-4C4D-B451-60F8A8F314AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97403A56-8BA5-4C4D-B451-60F8A8F314AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B0378F7-1A99-43BF-8478-A041B3DD6B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B0378F7-1A99-43BF-8478-A041B3DD6B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B0378F7-1A99-43BF-8478-A041B3DD6B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B0378F7-1A99-43BF-8478-A041B3DD6B19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A59AFA-F8A4-4276-8C92-87757ED87F64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A59AFA-F8A4-4276-8C92-87757ED87F64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A59AFA-F8A4-4276-8C92-87757ED87F64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A59AFA-F8A4-4276-8C92-87757ED87F64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

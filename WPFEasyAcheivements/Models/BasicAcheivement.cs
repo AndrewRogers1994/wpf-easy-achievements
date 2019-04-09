@@ -2,15 +2,15 @@
 
 namespace WPFEasyAcheivements.Models
 {
-    public class BaseAcheivement
+    public class BasicAcheivement
     {
         public string AcheivementTitle { get; private set; } = "Acheivement Title Goes here";
         public string AcheivementMessage { get; private set; } = "Acheivement Message Goes here";
         public int CurrentStep { get; private set; } = 0;
         public int TotalSteps { get; private set; } = 1;
-        public event Action<BaseAcheivement> AchveimentProgress;
+        public event Action<BasicAcheivement> AchveimentProgress;
 
-        public BaseAcheivement(string Title, string message, int currentStep = 0, int totalSteps = 1)
+        public BasicAcheivement(string Title, string message, int currentStep = 0, int totalSteps = 1)
         {
             AcheivementTitle = Title;
             AcheivementMessage = message;
@@ -68,8 +68,5 @@ namespace WPFEasyAcheivements.Models
                 AchveimentProgress.Invoke(this);
             }
         }
-
-
-
     }
 }

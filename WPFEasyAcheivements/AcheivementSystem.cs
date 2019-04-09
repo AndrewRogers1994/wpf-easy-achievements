@@ -1,35 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using TestApp.Models;
+using WPFEasyAcheivements.Models;
 
 namespace WPFEasyAcheivements
 {
     public static class AcheivementSystem
     {
-        private static List<BaseAcheivement> addedAcheivements = new List<BaseAcheivement>();
-        public static event Action<BaseAcheivement> AcheivementComplete;
-        public static event Action<BaseAcheivement> AcheivementProgress;
+        private static List<BasicAcheivement> addedAcheivements = new List<BasicAcheivement>();
+        public static event Action<BasicAcheivement> AcheivementComplete;
+        public static event Action<BasicAcheivement> AcheivementProgress;
 
 
 
-        public static void AddAcheivement(BaseAcheivement acheivement)
+        public static void AddAcheivement(BasicAcheivement acheivement)
         {
             acheivement.AchveimentProgress += Acheivement_AchveimentProgress;
             addedAcheivements.Add(acheivement);
         }
 
-        public static List<BaseAcheivement> GetAllAcheivements()
+        public static List<BasicAcheivement> GetAllAcheivements()
         {
             return addedAcheivements;
         }
 
-        public static List<BaseAcheivement> GetCompletedAcheivements()
+        public static List<BasicAcheivement> GetCompletedAcheivements()
         {
             return addedAcheivements.Where(x => x.GetComplectionPercent() == 100).ToList();
         }
 
-        private static void Acheivement_AchveimentProgress(BaseAcheivement obj)
+        private static void Acheivement_AchveimentProgress(BasicAcheivement obj)
         {
             if(AcheivementProgress != null)
             {
@@ -44,7 +44,7 @@ namespace WPFEasyAcheivements
             }
         }
 
-        public static void AddAcheivements(List<BaseAcheivement> acheivements)
+        public static void AddAcheivements(List<BasicAcheivement> acheivements)
         {
             addedAcheivements.AddRange(acheivements);
         }

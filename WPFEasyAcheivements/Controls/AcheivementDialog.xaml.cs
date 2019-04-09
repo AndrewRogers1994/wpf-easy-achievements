@@ -6,26 +6,26 @@ using System.Windows.Media.Animation;
 
 namespace WPFEasyAcheivements.Controls
 {
-    public partial class BasicDialog : UserControl
+    public partial class AcheivementDialog : UserControl
     {
         private const double animationTime = 0.5;
         public bool isActive = true;
 
-        public BasicDialog()
+        public AcheivementDialog()
         {
             InitializeComponent();
             AcheivementSystem.AcheivementProgress += AcheivementSystem_AcheivementProgress;
             AcheivementSystem.AcheivementComplete += AcheivementSystem_AcheivementComplete;
         }
 
-        private void AcheivementSystem_AcheivementComplete(Models.BaseAcheivement obj)
+        private void AcheivementSystem_AcheivementComplete(Models.BasicAcheivement obj)
         {
             acheivementTitle.Content = obj.AcheivementTitle;
             acheivementDescription.Content = "COMPLETE:" + obj.AcheivementMessage;
             ShowAcheivement(2, null);
         }
 
-        private void AcheivementSystem_AcheivementProgress(Models.BaseAcheivement obj)
+        private void AcheivementSystem_AcheivementProgress(Models.BasicAcheivement obj)
         {
             acheivementTitle.Content = obj.AcheivementTitle;
             acheivementDescription.Content = obj.AcheivementMessage;
