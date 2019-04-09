@@ -5,11 +5,11 @@
 As mentioned above, the current functionality is limited however it should be enough to be usable:
 * Basic Acheivement System - System that will store, track the progress and notify about acheivement changes
 * Basic Acheivement UI Control - A very basic UI control that can be used to display acheivements
-* Ability to implement with your UI Systems - if you don't like the Basic Acheivement UI then you are able to integrate with your own UI ([Example](http://test.com))
+* Ability to implement with your UI Systems - if you don't like the Basic Acheivement UI then you are able to integrate with your own UI ([Example](https://github.com/Murded/wpf-easy-achievements/tree/master/Examples/CreatingACustomDialog))
 
 
 # Getting Started
-Getting started with **wpf-easy-acheivements** is very simple, the easiest way is to grab the [Latest DLL](http://test.com) and then reference that in your project.  Once you have a reference to the DLL you are then able to start creating and tracking acheivements.
+Getting started with **wpf-easy-acheivements** is very simple, the easiest way is to grab the [Latest DLL](https://github.com/Murded/wpf-easy-achievements/releases/tag/v1.0) and then reference that in your project.  Once you have a reference to the DLL you are then able to start creating and tracking acheivements.
 
 ```csharp
         public MainWindow()
@@ -46,5 +46,5 @@ If you'd like to use the provided Acheivement UI simply add the control to your 
 
 # Examples
 I've provided some examples that might help answer any questions that you have:
-* [UsingIncludedDialog](http://test.com) - Shows you how to use the built in dialog
-* [CreatingACustomDialog](http://tets.com) - Shows you how to integrate into your own UI systems
+* [UsingIncludedDialog](https://github.com/Murded/wpf-easy-achievements/tree/master/Examples/UsingIncludedDialog) - Shows you how to use the built in dialog
+* [CreatingACustomDialog](https://github.com/Murded/wpf-easy-achievements/tree/master/Examples/CreatingACustomDialog) - Shows you how to integrate into your own UI systems
